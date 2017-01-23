@@ -1,0 +1,111 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet"  type="text/css" media="screen" href="styles/externalStyleSheet.css" />
+	<link rel="shortcut icon" href="Pictures/smLogo.png">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Sans">
+	<title>Nike Futsal Shoe</title>
+</head>
+
+<body>
+	<div class="page">
+		<header>
+			<a href="index.html"><img src="Pictures/smBannerLogo.png" alt="ShoeMart Banner Logo"></a>
+		</header>
+		
+		<!-- Top Navigation Bar -->
+		<nav>
+			<ul class="nav-bar">
+				<li>
+					<a href="AboutUs.html" title="About Us Page">About Us</a>
+				</li>
+				
+				<li class="dropdown">
+					<a href="Support.html" class="dropbtn">Support</a>
+						<div class="dropdown-content">
+							<a href="Support.html#contactRelativePlace">Contact Us</a>
+							<a href="Support.html#faqRelativePlace">FAQs</a>
+						</div>
+				</li>
+				
+				<li class="dropdown">
+					<a href="Products.html" class="dropbtn">Products</a>
+						<div class="dropdown-content">
+							<a href="CasualShoes.html">Casual</a>
+							<a href="SportsShoes.html">Sports</a>
+						</div>
+				</li>
+				
+				<li>
+					<a href="index.html" title="Home Page">Home</a>
+				</li>
+			</ul>
+		</nav>
+		
+		<!-- Product Details -->
+		<section class="product">
+			<h4><a href="Products.html">All Shoes</a> > <a href="SportsShoes.html">Sports Shoes</a> > Nike Futsal Shoe</h4>
+				<div class="productContainer">
+					<aside>
+						
+						<div class="details">
+							<h2>Nike Futsal Shoe</h2>
+							<h3>Price: $99</h3>
+							
+							<p> Select Size: </p>
+							<form action="index.html">
+								<select id="size" class="shoesize" name="shoesize">
+									<option value="size8">8</option>
+									<option value="size8.5">8.5</option>
+									<option value="size9">9</option>
+									<option value="size9.5">9.5</option>
+									<option value="size10">10</option>
+									<option value="size10.5">10.5</option>
+									<option value="size11">11</option>
+								 </select>
+								 <p></p>
+								 <input type="submit" class="addcartbtn" value="Add to Cart" onclick="alert('You have added this item to your cart.')">
+							</form>
+						</div>
+						<img src="Pictures/nikeFutsal.jpg" alt="Nike Futsal Shoe">
+					</aside>
+					
+					<aside class="productDescription">
+						<div>
+							<h2 class="featuresTopSpacing"> Description </h2>
+							<p class="topSpacing">
+							The Nike Futsal Shoe Men's Indoor/Court Shoe features a sleek upper and rubber outsole for
+							incredible touch and traction when playing small-sided games, indoors or on the court.
+							These football shoes are built for the player who is always in control of the play.
+							</p>
+							
+							<h2 class="featuresTopSpacing"> Features </h2>
+							<p class="topSpacing">
+							The abrasion-resistant upper provides great touch and ball control, but is durable enough to last in the cage.
+							Designed to dominate on flat, court surfaces with its cage-specific outsole.
+							</p>
+							<ul>
+								<li>Highly abrasion-resistant upper</li>
+								<li>Move with confidence and control on court with the high-grip, court-specific rubber outsole</li>
+							</ul>
+						</div>
+					</aside>
+					
+				</div>
+		</section>
+		
+		
+		<!-- Footer -->
+		<footer>
+			<div>
+			Terms & Conditions Privacy Policy &copy; 2016 ShoeMart
+			</div>
+		</footer>
+	</div>
+	
+</body>
+
+
+
+</html>

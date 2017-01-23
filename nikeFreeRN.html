@@ -1,0 +1,111 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" media="screen" href="styles/externalStyleSheet.css" />
+	<link rel="shortcut icon" href="Pictures/smLogo.png">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Sans">
+	<title>Nike Free RN</title>
+</head>
+
+<body>
+	<div class="page">
+		<header>
+			<a href="index.html"><img src="Pictures/smBannerLogo.png" alt="ShoeMart Banner Logo"></a>
+		</header>
+		
+		<!-- Top Navigation Bar -->
+		<nav>
+			<ul class="nav-bar">
+				<li>
+					<a href="AboutUs.html" title="About Us Page">About Us</a>
+				</li>
+				
+				<li class="dropdown">
+					<a href="Support.html" class="dropbtn">Support</a>
+						<div class="dropdown-content">
+							<a href="Support.html#contactRelativePlace">Contact Us</a>
+							<a href="Support.html#faqRelativePlace">FAQs</a>
+						</div>
+				</li>
+				
+				<li class="dropdown">
+					<a href="Products.html" class="dropbtn">Products</a>
+						<div class="dropdown-content">
+							<a href="CasualShoes.html">Casual</a>
+							<a href="SportsShoes.html">Sports</a>
+						</div>
+				</li>
+				
+				<li>
+					<a href="index.html" title="Home Page">Home</a>
+				</li>
+			</ul>
+		</nav>
+		
+		<!-- Product Details -->
+		<a id="featuredproduct"></a>
+		<section class="product">
+			<h4><a href="Products.html">All Shoes</a> > <a href="SportsShoes.html">Sports Shoes</a> > Nike Free RN Neon</h4>
+				<div class="productContainer">
+					<aside>
+						
+						<div class="details">
+							<h2>Nike Free RN Neon</h2>
+							<h3>Price: $99</h3>
+							
+							<p> Select Size: </p>
+							<form action="index.html">
+								<select id="size" class="shoesize" name="shoesize">
+									<option value="size8">8</option>
+									<option value="size8.5">8.5</option>
+									<option value="size9">9</option>
+									<option value="size9.5">9.5</option>
+									<option value="size10">10</option>
+									<option value="size10.5">10.5</option>
+									<option value="size11">11</option>
+								 </select>
+								 <p></p>
+								 <input type="submit" class="addcartbtn" value="Add to Cart" onclick="alert('You have added this item to your cart.')">
+							</form>
+						</div>
+						<img src="Pictures/nikefreeRN.jpg" alt="Nike Free RN">
+					</aside>
+					
+					<aside class="productDescription">
+						<div>
+							<h2 class="featuresTopSpacing"> Description </h2>
+							<p class="topSpacing">
+							More cushioned than the Nike Free RN Motion Flyknit, the Nike Free RN Running Shoe features a newly designed midsole
+							pattern that expands, flexes and contracts with your foot with every step. Its lightweight, breathable mesh upper helps
+							keep your feet cool and comfortable from start to finish.
+							</p>
+							
+							<h2 class="featuresTopSpacing"> Features </h2>
+							<p class="topSpacing">
+							Softer than previous iterations, the new midsole foam delivers exceptionally comfortable cushioning and lightweight durability for miles.
+							Engineered mesh provides lightweight, flexible support and breathable comfort. Flywire cables integrate with the laces and can be adjusted for an adaptive fit.
+							</p>
+							<ul>
+								<li>Minimal sockliner moulds to the shape of your foot for added support</li>
+								<li>Lightweight solid rubber segments under the toe and heel for enhanced traction and durability</li>
+							</ul>
+						</div>
+					</aside>
+					
+				</div>
+		</section>
+		
+		
+		<footer>
+			<div>
+			Terms & Conditions Privacy Policy &copy; 2016 ShoeMart
+			</div>
+		</footer>
+	</div>
+	
+</body>
+
+
+
+</html>

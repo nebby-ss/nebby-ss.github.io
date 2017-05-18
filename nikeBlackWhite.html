@@ -1,17 +1,25 @@
+<!DOCTYPE html>
 <html>
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" media="screen" href="styles/externalStyleSheet.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="styles/stylesheet.css">
+	<link rel="stylesheet" type="text/css" media="screen" href="styles/fotorama.css">
+	
 	<link rel="shortcut icon" href="Pictures/smLogo.png">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Sans">
+	
+	<!-- 1. Link to jQuery (1.8 or later), For Fotorama -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="js/fotorama.js" type="text/javascript"></script>
+	<script src="js/MobileNav.js" type="text/javascript"></script>
+	
 	<title>Nike Black & White</title>
 </head>
 
 <body>
 	<div class="page">
 		<header>
-			<a href="index.html"><img src="Pictures/smBannerLogo.png" alt="ShoeMart Banner Logo"></a>
+			<a href="index.html"><img src="Pictures/smWebLogo.png" alt="ShoeMart Logo"></a>
 		</header>
 		
 		<!-- Top Navigation Bar -->
@@ -43,17 +51,46 @@
 			</ul>
 		</nav>
 		
+		
+		<!-- Mobile Navigation -->
+		<div class="mobileNavPositioning">
+			<span class="mobileNavButton" onclick="openNav()">&#9776;</span>
+		</div>
+		
+		<div id="mySidenav" class="sidenav">
+		  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		  
+		  <a href="index.html" class="bottomSpacing">Home</a>
+		  
+		  <a href="Products.html" >Products</a>
+			  <a href="SportsShoes.html" class="subheading">Sports</a>
+			  <a href="CasualShoes.html" class="subheading bottomSpacing">Casual</a>
+			  
+		  <a href="Support.html">Support</a>
+			  <a href="Support.html#contactRelativePlace" class="subheading">Contact Us</a>
+			  <a href="Support.html#faqRelativePlace" class="subheading bottomSpacing">FAQs</a>
+			  
+		  <a href="AboutUs.html" class="bottomSpacing">About Us</a>
+		</div>
+		
+		
+		
+		<!-- Image for seperating the nav bar and main content -->
+		<figure class="center">
+			<img src="Pictures/headerSeperator.png" alt="headerseperator img">
+		</figure>
+		
 		<!-- Product Details -->
 		<section class="product">
-			<h4><a href="Products.html">All Shoes</a> > <a href="SportsShoes.html">Sports Shoes</a> > Nike Black & White</h4>
-				<div class="productContainer">
-					<aside>
-						
+			
+				<div class="container">
+					<aside class="bottomSpacing">
+						<h4><a href="Products.html">All Shoes</a> > <a href="SportsShoes.html">Sports Shoes</a> > Nike Black & White</h4>
 						<div class="details">
 							<h2>Nike Black & White</h2>
 							<h3>Price: $229</h3>
 							
-							<p> Select Size: </p>
+							<p> Select Size(US): </p>
 							<form action="index.html">
 								<select id="size" class="shoesize" name="shoesize">
 									<option value="size8">8</option>
@@ -68,7 +105,12 @@
 								 <input type="submit" class="addcartbtn" value="Add to Cart" onclick="alert('You have added this item to your cart.')">
 							</form>
 						</div>
-						<img src="Pictures/nikeBlackWhite.jpg" alt="Nike Black & White">
+						
+						<div class="fotorama" data-nav="thumbs">
+						  <a><img src="Pictures/Products/nikeBlackWhite.jpg" alt="Nike Black&White 1"></a>
+						  
+						</div>
+						
 					</aside>
 					
 					<aside class="productDescription">
@@ -84,6 +126,7 @@
 							There is great traction between the shoe and ground with the rubber outsoles placed strategically. There is maximum comfort and cooling due to the mesh,
 							allowing air flow in the shoe.
 							</p>
+							<br>
 							<ul>
 								<li>Three-layer mesh and perforated foam upper for air flow</li>
 								<li>Rubber outsoles are strategically placed for durability and traction</li>
@@ -97,6 +140,49 @@
 		
 		<!-- Footer -->
 		<footer>
+			<section class="footerContainer">
+				<aside class="footer-nav">
+					<h3>PRODUCTS</h3>
+					<ul>
+						<li>
+							<a href="SportsShoes.html">Sports</a>
+						</li>
+						<li>
+							<a href="CasualShoes.html">Casual</a>
+						</li>
+					</ul>
+				</aside>
+				
+				<aside class="footer-nav">
+					<h3>SUPPORT</h3>
+					<ul>
+						<li>
+							<a href="Support.html#faqRelativePlace">FAQs</a>
+						</li>
+						<li>
+							<a href="Support.html#contactRelativePlace">Contact Us</a>
+						</li>
+					</ul>
+				</aside>
+				
+				<aside class="footer-nav">
+					<h3>COMPANY</h3>
+					<ul>
+					
+						<li>
+							<a href="AboutUs.html">About Us</a>
+						</li>
+						<li>
+							&nbsp;
+						</li>
+					</ul>
+				</aside>
+				
+				<figure>
+					<img src="Pictures/footer.png" alt="footer line img">
+				</figure>
+			</section>
+		
 			<div>
 			Terms & Conditions Privacy Policy &copy; 2016 ShoeMart
 			</div>

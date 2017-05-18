@@ -1,18 +1,19 @@
+<!DOCTYPE html>
 <html>
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" media="screen" href="styles/externalStyleSheet.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="styles/stylesheet.css" />
 	<link rel="shortcut icon" href="Pictures/smLogo.png">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Sans">
-	<title>ShoeMart | All Products</title>
+	<script src="js/MobileNav.js" type="text/javascript"></script>
+	<title>Products</title>
 </head>
 
 <body>
 
-	<div class="page">
+	<div>
 		<header>
-			<a href="index.html"><img src="Pictures/smBannerLogo.png" alt="ShoeMart Banner Logo"></a>
+			<a href="index.html"><img src="Pictures/smWebLogo.png" alt="ShoeMart Logo"></a>
 		</header>
 		
 		<!-- Top Navigation Bar -->
@@ -45,56 +46,131 @@
 		</nav>
 		
 		
+		<!-- Mobile Navigation -->
+		<div class="mobileNavPositioning">
+			<span class="mobileNavButton" onclick="openNav()">&#9776;</span>
+		</div>
+		
+		<div id="mySidenav" class="sidenav">
+		  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		  
+		  <a href="index.html" class="bottomSpacing">Home</a>
+		  
+		  <a href="Products.html" >Products</a>
+			  <a href="SportsShoes.html" class="subheading">Sports</a>
+			  <a href="CasualShoes.html" class="subheading bottomSpacing">Casual</a>
+			  
+		  <a href="Support.html">Support</a>
+			  <a href="Support.html#contactRelativePlace" class="subheading">Contact Us</a>
+			  <a href="Support.html#faqRelativePlace" class="subheading bottomSpacing">FAQs</a>
+			  
+		  <a href="AboutUs.html" class="bottomSpacing">About Us</a>
+		</div>
+		
+		
+		
+		<!-- Image for seperating the nav bar and main content -->
+		<figure class="center">
+			<img src="Pictures/headerSeperator.png" alt="headerseperator img">
+		</figure>
+		
+		
+		
 		<!-- List of All Products -->
 		<section class="productlisting">
-			<div class="container">
-				<h2 class="subTitling">All Shoes</h2>
+			<div class="productsContainer">
+				<h1 class="headerSpacing">All Shoes</h1>
 				
-					<div class="bottomSpacing">
+					
 						<figure class="productsPositioning">
-								<a href="nikeFreeRN.html" ><img src="Pictures/nikefreeRN.jpg" alt="Nike Free RN Neon"></a>
-								<figcaption class="topSpacing">Nike Free RN Neon <br> $119</figcaption>
+								<a href="nikeFreeRN.html" ><img src="Pictures/Products/nikefreeRN.jpg" alt="Nike Free RN Neon"></a>
+								<figcaption>Nike Free RN Neon <br> $119</figcaption>
 						</figure>
 						
 						<figure class="productsPositioning">
-								<a href="simpleGreyShoe.html"><img src="Pictures/greySimple.jpg" alt="Simple Grey Shoe"></a>
-								<figcaption class="topSpacing">Simple Grey Shoe <br> $109</figcaption>
+								<a href="simpleGreyShoe.html"><img src="Pictures/Products/greySimple.jpg" alt="Simple Grey Shoe"></a>
+								<figcaption>Simple Grey Shoe <br> $109</figcaption>
 						</figure>
 						
 						<figure class="productsPositioning">
-								<a href="blueShoe.html"><img src="Pictures/blueShoe.jpg" alt="Blue Shoe"></a>
-								<figcaption class="topSpacing">Blue Shoe <br> $50</figcaption>
+								<a href="blueShoe.html"><img src="Pictures/Products/blueShoe.jpg" alt="Blue Shoe"></a>
+								<figcaption>Blue Shoe <br> $50</figcaption>
 						</figure>
-					</div>
+					
 				
-					<div class="bottomSpacing">
+					
 						<figure class="productsPositioning">
-								<a href="nikeBlackWhite.html"><img src="Pictures/nikeBlackWhite.jpg" alt="Nike Black and White"></a>
-								<figcaption class="topSpacing">Nike Black & White <br> $229</figcaption>
+								<a href="nikeBlackWhite.html"><img src="Pictures/Products/nikeBlackWhite.jpg" alt="Nike Black and White"></a>
+								<figcaption>Nike Black & White <br> $229</figcaption>
 						</figure>
 					
 						<figure class="productsPositioning">
-								<a href="nikeFutsalShoe.html"><img src="Pictures/nikeFutsal.jpg" alt="Nike Futsal Shoe"></a>
-								<figcaption class="topSpacing">Nike Futsal Shoe <br> $99</figcaption>
+								<a href="nikeFutsalShoe.html"><img src="Pictures/Products/nikeFutsal.jpg" alt="Nike Futsal Shoe"></a>
+								<figcaption>Nike Futsal Shoe <br> $99</figcaption>
 						</figure>
 						
 						<figure class="productsPositioning">
-								<a href="brownShoe.html"><img src="Pictures/brownShoe.jpg" alt="Brown Shoe"></a>
-								<figcaption class="topSpacing">Brown Shoe <br> $59</figcaption>
+								<a href="brownShoe.html"><img src="Pictures/Products/brownShoe.jpg" alt="Brown Shoe"></a>
+								<figcaption>Brown Shoe <br> $59</figcaption>
 						</figure>
-					</div>
+					
 			</div>
 				
 		</section>
 		
+		
+		
+		
 		<!-- Footer -->
 		<footer>
+			<section class="footerContainer">
+				<aside class="footer-nav">
+					<h3>PRODUCTS</h3>
+					<ul>
+						<li>
+							<a href="SportsShoes.html">Sports</a>
+						</li>
+						<li>
+							<a href="CasualShoes.html">Casual</a>
+						</li>
+					</ul>
+				</aside>
+				
+				<aside class="footer-nav">
+					<h3>SUPPORT</h3>
+					<ul>
+						<li>
+							<a href="Support.html#faqRelativePlace">FAQs</a>
+						</li>
+						<li>
+							<a href="Support.html#contactRelativePlace">Contact Us</a>
+						</li>
+					</ul>
+				</aside>
+				
+				<aside class="footer-nav">
+					<h3>COMPANY</h3>
+					<ul>
+					
+						<li>
+							<a href="AboutUs.html">About Us</a>
+						</li>
+						<li>
+							&nbsp;
+						</li>
+					</ul>
+				</aside>
+				
+				<figure>
+					<img src="Pictures/footer.png" alt="footer line img">
+				</figure>
+			</section>
+		
 			<div>
 			Terms & Conditions Privacy Policy &copy; 2016 ShoeMart
 			</div>
 		</footer>
 	</div>
-	
 </body>
 
 

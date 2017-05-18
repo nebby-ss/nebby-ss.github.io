@@ -1,19 +1,24 @@
+<!DOCTYPE html>
 <html>
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" media="screen" href="styles/externalStyleSheet.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="styles/stylesheet.css" />
 	<link rel="shortcut icon" href="Pictures/smLogo.png">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Sans">
+	<script src="js/jquery-1.11.3.min.js" type="text/javascript"></script>
+    <script src="js/jssor.slider-22.1.9.mini.js" type="text/javascript"></script>
+	<script src="js/Slider.js" type="text/javascript"></script>
+	<script src="js/MobileNav.js" type="text/javascript"></script>
 	<title>ShoeMart</title>
 </head>
 
 <body>
 
-	<div class="page">
+	<div>
 		<header>
-			<a href="index.html"><img src="Pictures/smBannerLogo.png" alt="ShoeMart Banner Logo"></a>
+			<a href="index.html"><img src="Pictures/smWebLogo.png" alt="ShoeMart Logo"></a>
 		</header>
+		
 		
 		<!-- Top Navigation Bar -->
 		<nav>
@@ -42,34 +47,135 @@
 					<a href="index.html" title="Home Page">Home</a>
 				</li>
 			</ul>
-			
 		</nav>
 		
-		<!-- Featured Product Image -->
-		<figure>
-				<a href="nikeFreeRn.html#featuredproduct"><img src="Pictures/featuredProduct.jpg" alt="Featured Shoe"></a>
+		
+		
+		<!-- Mobile Navigation -->
+		<div class="mobileNavPositioning">
+		<span class="mobileNavButton" onclick="openNav()">&#9776;</span>
+		</div>
+		
+		<div id="mySidenav" class="sidenav">
+		  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		  
+		  <a href="index.html" class="bottomSpacing">Home</a>
+		  
+		  <a href="Products.html" >Products</a>
+			  <a href="SportsShoes.html" class="subheading">Sports</a>
+			  <a href="CasualShoes.html" class="subheading bottomSpacing">Casual</a>
+			  
+		  <a href="Support.html">Support</a>
+			  <a href="Support.html#contactRelativePlace" class="subheading">Contact Us</a>
+			  <a href="Support.html#faqRelativePlace" class="subheading bottomSpacing">FAQs</a>
+			  
+		  <a href="AboutUs.html" class="bottomSpacing">About Us</a>
+		</div>
+		
+		
+		
+		<!-- Image for seperating the nav bar and main content -->
+		<figure class="center">
+			<img src="Pictures/headerSeperator.png" alt="headerseperator img">
 		</figure>
+		
+		
+		
+		<!-- SLIDE SHOW -->
+		<section class="sliderTopSpacing">
+			<div id="jssor_1" class="sliderSizing">
+				<div data-u="slides" class="slides">
+					<div>
+						<a href="SportsShoes.html"><img data-u="image" src="Pictures/index/slide1.png" alt="1st slider image"></a>
+					</div>
+					
+					<div>
+						<a href="nikeFreeRn.html#featuredproduct"><img data-u="image" src="Pictures/index/slide2.png" alt="2nd slider image"></a>
+					</div>
+					
+
+				</div>
+				<!-- Bullet Navigator -->
+				<div data-u="navigator" class="jssorb05 bulletNavPositioning" data-autocenter="1">
+					<!-- bullet navigator item prototype -->
+					<div data-u="prototype"></div>
+				</div>
+				<!-- Arrow Navigator -->
+				<span data-u="arrowleft" class="jssora12l" data-autocenter="2"></span>
+				<span data-u="arrowright" class="jssora12r" data-autocenter="2"></span>
+			</div>
+		</section>
+
+		
+		
+		
+		<!-- About -->
+		<figure class="about">
+			<img src="Pictures/index/about1920.png" alt="about img">
+		</figure>
+		
 		
 		<!-- Shop -->
 		<section class="main">
-			<h2 class="titling"> Shop Now! </h2>
-			<aside class="rightspacing">
-				<a href="CasualShoes.html"><img src="Pictures/casualshoe.jpg" alt="Casual Shoes"></a>
-					<div>
-						<h2 class="subTitling">Get your regular shoes</h2>
-					</div>
-			</aside>
 			
-			<aside>	
-				<a href="SportsShoes.html"><img src="Pictures/sportShoes.jpg" alt="Sports Shoes"></a>
-					<div>	
-						<h2 class="subTitling">Get your sports shoes</h2>
-					</div>
-			</aside>
+			<span class="sport">
+				<a href="SportsShoes.html" class="rightspacing"><img src="Pictures/index/sportShoes.png" alt="Sports Shoes"></a>
+			</span>
+			
+			<span class="casual">
+				<a href="CasualShoes.html"><img src="Pictures/index/casualShoes.png" alt="Casual Shoes"></a>
+			</span>
+			
 		</section>
+		
+		
+		
 		
 		<!-- Footer -->
 		<footer>
+			<section class="footerContainer">
+				<aside class="footer-nav">
+					<h3>PRODUCTS</h3>
+					<ul>
+						<li>
+							<a href="SportsShoes.html">Sports</a>
+						</li>
+						<li>
+							<a href="CasualShoes.html">Casual</a>
+						</li>
+					</ul>
+				</aside>
+				
+				<aside class="footer-nav">
+					<h3>SUPPORT</h3>
+					<ul>
+						<li>
+							<a href="Support.html#faqRelativePlace">FAQs</a>
+						</li>
+						<li>
+							<a href="Support.html#contactRelativePlace">Contact Us</a>
+						</li>
+					</ul>
+				</aside>
+				
+				<aside class="footer-nav">
+					<h3>COMPANY</h3>
+					<ul>
+					
+						<li>
+							<a href="AboutUs.html">About Us</a>
+						</li>
+						<li>
+							&nbsp;
+						</li>
+					</ul>
+				</aside>
+				
+				<figure>
+					<img src="Pictures/footer.png" alt="footer line img">
+				</figure>
+			</section>
+		
 			<div>
 			Terms & Conditions Privacy Policy &copy; 2016 ShoeMart
 			</div>
